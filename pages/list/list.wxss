@@ -1,0 +1,13 @@
+/* pages/list/list.wxss */
+.listcontent{
+  width: 100%;
+  padding: 40rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.itemlist{
+  margin-top: 10rpx;
+}

@@ -1,0 +1,41 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail-container">
+  <!-- 电影标题 -->
+  <view class="detail-title">
+    {{detailinfo.title}}({{detailinfo.year}})
+  </view>
+
+  <!-- 电影信息 -->
+  <view class="detail-info">
+    <view class="detail-info-left">
+      <view class="detail-info-star">
+        <star starsize='30' num='{{detailinfo.rating.value}}' fontsize='30'></star>
+        <view class="starperson">{{detailinfo.rating.count}}人评价</view>
+      </view>
+      <view class="detail-info-text">
+        <text>{{detailinfo.durations[0]}} {{detailinfo.genres}}</text>
+        <text>{{detailinfo.pubdate[0]}}上映 {{detailinfo.countries}}</text>
+        <text>{{detailinfo.intro}}...</text>
+      </view>
+    </view>
+    <view class="detail-info-right">
+      <image src="{{detailinfo.cover.image.small.url}}"></image>
+    </view>
+  </view>
+
+  <!-- 豆瓣标签 -->
+  <view class="douban-tag">
+    <view class="douban-tag-title">look成员常用标签</view>
+    <view class="douban-tags">
+      <text wx:for='{{detailinfo.tags}}' wx:key='url'>{{item.name}}</text>
+    </view>
+  </view>
+
+  <!-- 评价 -->
+  <view class="douban-comment">
+    <view class="douban-comment-title">短评({{commenttotal}})</view>
+  </view>
+   <comments wx:for='{{commentlist}}' wx:key='index' item='{{item}}'></comments>
+   <!-- 查看更多 -->
+   <navigator class="show-comment-more" url="/pages/comment/comment?id={{id}}&type={{type}}&img={{detailinfo.cover.image.small.url}}&title={{detailinfo.title}}&star={{detailinfo.rating.value}}">查看更多短评</navigator>
+</view>

@@ -1,0 +1,47 @@
+/* pages/comment/comment.wxss */
+.comment-container{
+  padding: 30rpx;
+}
+.comment-heade{
+  display: flex;
+  justify-content: flex-start;
+}
+.comment-heade image{
+  width: 150rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.comment-title{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+
+}
+.commentstar{
+  margin-top: 20rpx !important;
+  justify-content: flex-start !important;
+}
+.comments-m-title{
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #b3b3b3;
+}
+.comment-list-container{
+  margin-top: 40rpx;
+}
+.comments-list-lodings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28rpx;
+  margin-bottom: 15rpx;
+}
+.comments-list-lodings text{
+  font-size: 26rpx;
+  color: #b3b3b3;
+  margin-left: 20rpx;
+}
+.comments-list-lodings image{
+  width: 30rpx;
+  height: 30rpx;
+}

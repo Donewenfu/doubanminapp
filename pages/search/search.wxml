@@ -1,0 +1,31 @@
+<!--pages/search/search.wxml-->
+<searchbar isnav='{{false}}' bindsearchinput='changeipt'></searchbar>
+
+<!-- 历史搜索 -->
+<view class="historysearch" wx:if='{{history.length>=1}}'>
+  <view class="history-title">
+    <text>最近搜索</text>
+    <text class="iconfont icon-shanchu" bindtap="deletehistory"></text>
+  </view>
+  <view class="history-list" wx:for='{{history}}' wx:key='index'>
+    <navigator url="/pages/detail/detail?type=movie&id={{item.id}}">{{item.title}}</navigator>
+  </view>
+</view>
+
+<view class="searchlist">
+  <view class="searchitem" wx:for='{{searchlist}}' wx:key='index' bindtap="clickdetail" data-id='{{item.id}}' data-title='{{item.title}}'>
+    <view class="searchimg">
+    <image src="{{item.pic.normal}}"></image>
+  </view>
+  <view class="searchtext">
+    <view class="searchtitle">{{item.title}}</view>
+    <view class="searchdesc">
+      <text>{{item.rating.value}}分/{{item.year}}</text>
+    </view>
+  </view>
+  </view>
+</view>
+
+<mp-dialog  ext-class='dialog--weui-dialog__bd' title="温馨提示" show="{{showdialog}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+    <view class="tiptext">您确认删除历史记录吗？</view>
+</mp-dialog>

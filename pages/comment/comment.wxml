@@ -1,0 +1,21 @@
+<!--pages/comment/comment.wxml-->
+<view class="comment-container">
+	<view class="comment-heade" bind:tap='clickback'>
+		<image src="{{img}}"></image>
+		<view class="comment-title">
+			<text>{{title}}</text>
+			<star commentstar='commentstar' num='5'></star>
+		</view>
+	</view>
+	<!-- 评论title -->
+	<view class="comments-m-title">全部影评({{total}})</view>
+	<view class="comment-list-container">
+		<comments wx:for='{{commentslist}}' wx:key='index' item='{{item}}'></comments>
+	</view>
+
+	<view class="comments-list-lodings" wx:if='{{lodingshow}}'>
+		<image src="../../images/loding.gif"></image>
+		<text>评论正在加载...</text>
+	</view>
+
+</view>

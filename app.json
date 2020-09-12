@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/list",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/comment/comment"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#42BD56",
+    "navigationBarTitleText": "电影look",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "tabBar":{
+    "borderStyle": "black",
+    "color":"#666666",
+    "selectedColor":"#42BD56",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"/images/index.png",
+        "selectedIconPath":"/images/s_index.png"
+      },
+      {
+        "pagePath":"pages/list/list",
+        "text":"Like",
+        "iconPath":"/images/movie.png",
+        "selectedIconPath":"/images/s_movie.png"
+      }
+    ]
+  }
+}

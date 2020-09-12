@@ -1,0 +1,20 @@
+<!--components/indexmodule/indexmodule.wxml-->
+<view class="douban-group">
+	<view class="douban-item-view">
+		<view class="douban-heade-title">
+			<view class="douban-title-left">{{moduletitle}}</view>
+			<navigator url="{{moduleurl}}" class="showmore">查看更多<text class="iconfont icon-jiantou showmore"></text></navigator>
+		</view>
+		<view class="douban-body-list">
+			<scroll-view scroll-x='true' class="douban-list-scroll">
+				<navigator class="douban-list-item" wx:for='{{items}}' wx:key='index' url="/pages/detail/detail?type={{typeindex}}&id={{item.id}}">
+					<view class="douban-img">
+						<image src="{{item.cover.url}}" class="listimage"></image>
+					</view>
+					<text class="douban-list-name">{{item.title}}</text>
+					<star num='{{item.rating.value}}'></star>
+				</navigator>
+			</scroll-view>
+		</view>
+	</view>
+</view>

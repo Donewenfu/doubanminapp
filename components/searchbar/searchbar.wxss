@@ -1,0 +1,30 @@
+/* components/searchbar/searchbar.wxss */
+.searchcontent{
+  background-color: #42BD56;
+  padding: 18rpx;
+}
+.searchnav{
+  width: 100%;
+  height: 60rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  background-image: url('https://www.wenfu814.xyz/uploads/upload_ec70a40344ea97dc99907e1034ac2be2.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 40rpx 40rpx;
+}
+
+.search-input{
+  width: 100%;
+  background-color: #fff;
+  min-height: 60rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  padding: 10rpx 10rpx 10rpx 60rpx;
+  box-sizing: border-box;
+  background-image: url('https://www.wenfu814.xyz/uploads/upload_ec70a40344ea97dc99907e1034ac2be2.png');
+  background-repeat: no-repeat;
+  background-position: 15rpx center;
+  background-size: 40rpx 40rpx;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,14 @@
+/* components/star/star.wxss */
+.star-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star-group .star-image{
+  width: 20rpx;
+  height: 20rpx;
+}
+.star-group .star-text{
+  font-size: 20rpx;
+  color: #ccc;
+}

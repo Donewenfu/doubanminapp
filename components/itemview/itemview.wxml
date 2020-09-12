@@ -1,0 +1,9 @@
+<navigator class="douban-list-item" wx:if='{{items}}' url="/pages/detail/detail?type={{itemtype}}&id={{items.id}}">
+	<view class="douban-img">
+		<image src="{{items.cover.url}}" class="listimage"></image>
+	</view>
+	<text class="douban-list-name">{{items.title}}</text>
+	<star num='{{items.rating.value}}'></star>
+</navigator>
+
+<view wx:else class="douban-list-item"></view>

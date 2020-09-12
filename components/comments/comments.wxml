@@ -1,0 +1,18 @@
+<!--components/comments/comments.wxml-->
+<view class="douban-comment-list">
+	<view class="douban-comment-avatar">
+		<image src="{{item.user.avatar}}"></image>
+	</view>
+	<view class="douban-comment-info">
+		<view class="douban-comment-name">
+			<text>{{item.user.name}}</text>
+			<star num='{{item.rating.value*2}}' starsize='25'></star>
+		</view>
+		<view class="douban-comment-date">
+			<text>{{item.create_time}}</text>
+		</view>
+		<view class="douban-comment-text">
+			<text>{{item.comment}}</text>
+		</view>
+	</view>
+</view>

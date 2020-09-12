@@ -1,0 +1,8 @@
+<!--pages/list/list.wxml-->
+<!-- 导航 -->
+<searchbar isnav='{{true}}'></searchbar>
+
+<view class="listcontent">
+  <itemview wx:for='{{listData}}' wx:key='index' items='{{item}}' class='itemlist' itemtype='{{type}}'></itemview>
+</view>
+

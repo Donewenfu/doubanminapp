@@ -1,0 +1,5 @@
+<searchbar isnav='{{true}}'></searchbar>
+
+<indexmodule moduletitle='{{moviestitle}}' items='{{movieslist}}' moduleurl='/pages/list/list?type=movie' typeindex='movie'></indexmodule>
+<indexmodule moduletitle='{{tvtitle}}' items='{{tvlist}}' moduleurl='/pages/list/list?type=tv' typeindex='tv'></indexmodule>
+<indexmodule moduletitle='{{showtitle}}' items='{{showlist}}' moduleurl='/pages/list/list?type=show' typeindex='show'></indexmodule>
